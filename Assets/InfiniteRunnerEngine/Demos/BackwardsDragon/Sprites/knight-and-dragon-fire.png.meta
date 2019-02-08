@@ -1,0 +1,718 @@
+fileFormatVersion: 2
+guid: 8998889b7beaadd4cae76f6f471750ab
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: knight-and-dragon-fire_0
+    21300002: knight-and-dragon-fire_1
+    21300004: knight-and-dragon-fire_2
+    21300006: knight-and-dragon-fire_3
+    21300008: knight-and-dragon-fire_4
+    21300010: knight-and-dragon-fire_5
+    21300012: knight-and-dragon-fire_6
+    21300014: knight-and-dragon-fire_7
+    21300016: knight-and-dragon-fire_8
+    21300018: knight-and-dragon-fire_9
+    21300020: knight-and-dragon-fire_10
+    21300022: knight-and-dragon-fire_11
+    21300024: knight-and-dragon-fire_12
+    21300026: knight-and-dragon-fire_13
+    21300028: knight-and-dragon-fire_14
+    21300030: knight-and-dragon-fire_15
+    21300032: knight-and-dragon-fire_16
+    21300034: knight-and-dragon-fire_17
+    21300036: knight-and-dragon-fire_18
+    21300038: knight-and-dragon-fire_19
+    21300040: knight-and-dragon-fire_20
+    21300042: knight-and-dragon-fire_21
+    21300044: knight-and-dragon-fire_22
+    21300046: knight-and-dragon-fire_23
+    21300048: knight-and-dragon-fire_24
+    21300050: knight-and-dragon-fire_25
+    21300052: knight-and-dragon-fire_26
+    21300054: knight-and-dragon-fire_27
+    21300056: knight-and-dragon-fire_28
+    21300058: knight-and-dragon-fire_29
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f5039cce758254b818d2c555ebda4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70f3aa18d2fbd24783e9754d9139801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7990e0c58c811cb4caa6ebe11000c06d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_3
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164bd47a13901df4cacb197068236f12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_4
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96cfeed3031fb948a22491a01984087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_5
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cf98650f94ac843af08a972db1c6ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_6
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419dc1b0c2652dd4782617ed15d67635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_7
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcd04b735ce4084ea991b245f0b1d00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_8
+      rect:
+        serializedVersion: 2
+        x: 2402
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00b6b667c750f445bc43729046d6ec7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_9
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebab9c1e035940944acc28f7f829f2a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_10
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580fc34a95810a84597afaefb6223334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_11
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580709eecc2004b4bade211d37bbf082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_12
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 1619
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f852a2d545b5a3c48b180f85c9331b69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5226ca34457a9404eb84371dccb06d91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_14
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59beaabba818d34f94e366b4a4ba82e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_15
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094be0448cd3d684a85aa0c79e9a36c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_16
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0cac5e52fb4b74c8052472090db98c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_17
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b7492ed84698841aaf0a708020b655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_18
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bec16f261262c40a5751eb3c2a2b69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_19
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c088f6b18378d479e5b5ee41754342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_20
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac49000e2300a940ac8ea129df11bd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_21
+      rect:
+        serializedVersion: 2
+        x: 2402
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8cc5a2eff446e4d850745e93cd46bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_22
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5119a484a26fe443b2cf6f939e6790b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_23
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e0679f5b251454595826326a931c7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_24
+      rect:
+        serializedVersion: 2
+        x: 3302
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761de3a9d812ec84096f0254cb37dcc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_25
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 1190
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eec29a6ba66e924c9a500335a524d32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_26
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 761
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d34cb0df4bc9049b41b2e6b6cbf959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_27
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 761
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527c443ef0cc6c448b742045fbf3d3c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_28
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 761
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7416ecebe9e0e4da25e86f99973f74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knight-and-dragon-fire_29
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 761
+        width: 298
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab673326b1ad51343a411282a6c43a57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
