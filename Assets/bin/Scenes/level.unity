@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingPosition: {fileID: 1513988929}
   PlayableCharacters:
-  - {fileID: 11454456, guid: 878d9904b5673f34ca8aca8557c83e29, type: 3}
+  - {fileID: 11483956, guid: 71a5a2cf71ee85143b79f2b726ab594e, type: 3}
   DistanceBetweenCharacters: 1
   PointsPerSecond: 20
   InstructionsText: 'Desktop : Press space or A (pad) to jump.
@@ -1272,11 +1272,11 @@ MonoBehaviour:
     m_Center: {x: 10, y: 25, z: 0}
     m_Extent: {x: 82.7, y: 50.1, z: 38.48}
   DeathBounds:
-    m_Center: {x: 10, y: 5, z: 0}
-    m_Extent: {x: 15, y: 10.4, z: 0}
-  InitialSpeed: 75
-  MaximumSpeed: 200
-  SpeedAcceleration: 0.25
+    m_Center: {x: 11.4, y: 5, z: 0}
+    m_Extent: {x: 12, y: 10.4, z: 0}
+  InitialSpeed: 62.5
+  MaximumSpeed: 150
+  SpeedAcceleration: 0.1
   IntroFadeDuration: 0.5
   OutroFadeDuration: 1
   StartCountdown: 0
