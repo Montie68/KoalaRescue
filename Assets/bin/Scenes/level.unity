@@ -1274,13 +1274,13 @@ MonoBehaviour:
   DeathBounds:
     m_Center: {x: 11.4, y: 5, z: 0}
     m_Extent: {x: 12, y: 10.4, z: 0}
-  InitialSpeed: 62.5
-  MaximumSpeed: 150
-  SpeedAcceleration: 0.1
+  InitialSpeed: 5
+  MaximumSpeed: 15
+  SpeedAcceleration: 0.25
   IntroFadeDuration: 0.5
   OutroFadeDuration: 1
-  StartCountdown: 0
-  StartText: 
+  StartCountdown: 3
+  StartText: Ready!
   ControlScheme: 0
   LifeLostExplosion: {fileID: 184460, guid: 2bfa6f1578b3ec0408e74b5cbbca104d, type: 3}
 --- !u!4 &621938743

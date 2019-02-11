@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 1748748897487022243}
   - component: {fileID: 7036678465710937053}
   m_Layer: 0
-  m_Name: TileMapTemplate 1
+  m_Name: TileMapTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a6617bb2a239047a2242ac9b1cc531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
+  Speed: 10
   Acceleration: 0
   Direction: {x: -1, y: 0, z: 0}
   DirectionCanBeChangedBySpawner: 1
