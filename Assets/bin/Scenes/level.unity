@@ -1262,15 +1262,15 @@ MonoBehaviour:
   PlayableCharacters:
   - {fileID: 11483956, guid: 71a5a2cf71ee85143b79f2b726ab594e, type: 3}
   DistanceBetweenCharacters: 1
-  PointsPerSecond: 20
+  PointsPerSecond: 1
   InstructionsText: 'Desktop : Press space or A (pad) to jump.
 
     Mobile : Tap anywhere
 
     Try double jumping!'
   RecycleBounds:
-    m_Center: {x: 10, y: 25, z: 0}
-    m_Extent: {x: 82.7, y: 50.1, z: 38.48}
+    m_Center: {x: 90, y: 25, z: 0}
+    m_Extent: {x: 130, y: 50, z: 0}
   DeathBounds:
     m_Center: {x: 11.4, y: 5, z: 0}
     m_Extent: {x: 12, y: 10.4, z: 0}
@@ -3704,6 +3704,11 @@ MonoBehaviour:
     PoolSize: 3
     PoolCanExpand: 1
     Enabled: 1
+  - GameObjectToPool: {fileID: 4756650081298532728, guid: 596d247fd5f9b364696f20f07f8df649,
+      type: 3}
+    PoolSize: 3
+    PoolCanExpand: 1
+    Enabled: 1
   PoolingMethod: 3
   CanPoolSameObjectTwice: 0
 --- !u!114 &1939311150
@@ -3727,8 +3732,8 @@ MonoBehaviour:
   OnlySpawnWhileGameInProgress: 0
   InitialDelay: 0
   GapOrigin: 0
-  MinimumGap: {x: 16, y: 0, z: 0}
-  MaximumGap: {x: 16, y: 0, z: 0}
+  MinimumGap: {x: 0, y: 0, z: 0}
+  MaximumGap: {x: 0, y: 0, z: 0}
   MinimumYClamp: 0
   MaximumYClamp: 0
   MinimumZClamp: -4
