@@ -59,6 +59,8 @@ namespace Enemies
         }
         private void OnDisable()
         {
+            trigger.isTriggered = false;
+            enemyState =  EnemyState.IDEL;
             Destroy(_enemy);
         }
     }

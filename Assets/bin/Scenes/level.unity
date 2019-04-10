@@ -713,7 +713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &318354217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1108,11 +1108,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.51
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9263894
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1140,6 +1140,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: TotalLives
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
+      propertyPath: TimeScale
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1262,7 +1266,7 @@ MonoBehaviour:
   PlayableCharacters:
   - {fileID: 11483956, guid: 71a5a2cf71ee85143b79f2b726ab594e, type: 3}
   DistanceBetweenCharacters: 1
-  PointsPerSecond: 1
+  PointsPerSecond: 10
   InstructionsText: 'Desktop : Press space or A (pad) to jump.
 
     Mobile : Tap anywhere
@@ -1276,7 +1280,7 @@ MonoBehaviour:
     m_Extent: {x: 12, y: 10.4, z: 0}
   InitialSpeed: 5
   MaximumSpeed: 15
-  SpeedAcceleration: 0.25
+  SpeedAcceleration: 0.05
   IntroFadeDuration: 0.5
   OutroFadeDuration: 1
   StartCountdown: 3
@@ -2304,7 +2308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1033287666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3061,7 +3065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 159, y: -45}
+  m_AnchoredPosition: {x: 163.00008, y: -32}
   m_SizeDelta: {x: 197, y: 19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1591563077
@@ -3099,7 +3103,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
