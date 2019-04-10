@@ -13,6 +13,8 @@ namespace Enemies
         [Header("Editor Rect")]
         public Bounds boxSize;
 
+        private Enemy enemyContorller;
+
         private GameObject _enemy;
 
         EnemyState enemyState = EnemyState.IDEL;
@@ -35,22 +37,24 @@ namespace Enemies
                     Destroy(this);
                 }
             }
-            
         }
 
         // Update is called once per frame
         void Update()
         {
+            enemyState = enemyContorller.GetState();
             if (trigger.isTriggered && enemyState == EnemyState.IDEL)
             {
                 Debug.Log("Attack!");
-                enemyState = EnemyState.ATTACK;
+                enemyContorller.SetState(EnemyState.ATTACK);
             }
         }
         private void OnEnable()
         {
              _enemy = Instantiate(enemy, transform.position, Quaternion.identity);
             _enemy.transform.SetParent(this.transform.parent);
+            enemyContorller = _enemy.GetComponent<Enemy>();
+
 
         }
         private void OnDisable()

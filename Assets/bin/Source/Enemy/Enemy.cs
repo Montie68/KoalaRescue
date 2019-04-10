@@ -15,5 +15,11 @@ namespace Enemies {
         {
             return enemyState;
         }
+
+        public virtual void Die()
+        {
+            Destroy(this);
+        }
+
     }
 }

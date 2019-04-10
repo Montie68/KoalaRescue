@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 163549146673682407, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.8
+      value: 5.84
       objectReference: {fileID: 0}
     - target: {fileID: 163549146673682407, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
@@ -716,6 +716,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5111404259641941788, guid: 5847bf4d695646940b7241b12eac4587,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 5111404259641941788, guid: 5847bf4d695646940b7241b12eac4587,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.74
+      objectReference: {fileID: 0}
     - target: {fileID: 8610713311510571878, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
       propertyPath: boxSize.m_Center.x
@@ -724,7 +734,7 @@ PrefabInstance:
     - target: {fileID: 8610713311510571878, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
       propertyPath: boxSize.m_Center.y
-      value: 5.8
+      value: 5.84
       objectReference: {fileID: 0}
     - target: {fileID: 8610713311510571878, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
@@ -735,16 +745,6 @@ PrefabInstance:
         type: 3}
       propertyPath: boxSize.m_Extent.x
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111404259641941788, guid: 5847bf4d695646940b7241b12eac4587,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5111404259641941788, guid: 5847bf4d695646940b7241b12eac4587,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.74
       objectReference: {fileID: 0}
     - target: {fileID: 2450265012759212294, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
@@ -764,7 +764,7 @@ PrefabInstance:
     - target: {fileID: 7899996256740459606, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}
       propertyPath: boxSize.m_Center.y
-      value: 2.0600002
+      value: 2.1000001
       objectReference: {fileID: 0}
     - target: {fileID: 7899996256740459606, guid: 5847bf4d695646940b7241b12eac4587,
         type: 3}

@@ -6,11 +6,42 @@ using MoreMountains.InfiniteRunnerEngine;
 namespace Enemies {
     public class KillOneTouchSideBottom : KillsPlayerOnTouch
     {
-
-        protected override void OnTriggerEnter2D(Collider2D other)
+        public Enemy EnemyController = null;
+        void Start()
         {
-            BoxCollider2D boxCollider = this.GetComponent<BoxCollider2D>();
-           // if (boxCollider.)
+            if (EnemyController == null)
+            {
+                EnemyController = GetComponent<Enemy>();
+                if (EnemyController == null) gameObject.AddComponent<Enemy>();
+            }
+        }
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            foreach (ContactPoint2D point in collision.contacts)
+            {
+                if (point.normal.y <= -0.9f)
+                {
+                    EnemyController.Die();
+                }
+                else
+                {
+                    TriggerEnter(collision.gameObject);
+                }
+            }
+        }
+        void OnCollisionEnter(Collision collision)
+        {
+            foreach (ContactPoint point in collision.contacts)
+            {
+                if (point.normal.y <= -0.9f)
+                {
+                    EnemyController.Die();
+                }
+                else
+                {
+                    TriggerEnter(collision.gameObject);
+                }
+            }
         }
     }
 }

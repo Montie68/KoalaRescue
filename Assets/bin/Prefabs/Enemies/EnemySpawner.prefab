@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2231224777169674325, guid: bf0d6b6c94d7c55419d85e7c06c3a364, type: 3}
+  enemyContorller: {fileID: 6121137013894861901, guid: bf0d6b6c94d7c55419d85e7c06c3a364,
+    type: 3}
   trigger: {fileID: 7899996256740459606}
   boxSize:
     m_Center: {x: 0, y: 0, z: 0}
