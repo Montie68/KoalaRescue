@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.InfiniteRunnerEngine;
@@ -10,6 +11,16 @@ namespace Enemies
         public EnemyState BeginingEnemyState;
         private Rigidbody2D rb;
         private float LocalGravity = 0.0f;
+
+        [Serializable]
+        public class FallSpeed
+        {
+            public float Min = 0f;
+            public float Max = 0f;
+        };
+
+        [SerializeField]
+        public FallSpeed fallSpeed;
 
         // Start is called before the first frame update
         void Start()
@@ -42,7 +53,8 @@ namespace Enemies
            
             LocalGravity =  (levelManager.Speed - levelManager.InitialSpeed) ;
 
-            if (LocalGravity < 1) LocalGravity = 1;
+            if (LocalGravity < fallSpeed.Min) LocalGravity = fallSpeed.Min;
+            else if (LocalGravity > fallSpeed.Max) LocalGravity = fallSpeed.Max;
 
             rb.gravityScale = LocalGravity;
         }

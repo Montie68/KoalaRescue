@@ -26,7 +26,6 @@ namespace Enemies {
         void OnTriggerEnter2D(Collider2D collision)
         {
             isTriggered = true;
-            Debug.Log("Pop!");
         }
     }
 }

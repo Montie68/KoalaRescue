@@ -45,7 +45,6 @@ namespace Enemies
             enemyState = enemyContorller.GetState();
             if (trigger.isTriggered && enemyState == EnemyState.IDEL)
             {
-                Debug.Log("Attack!");
                 enemyContorller.SetState(EnemyState.ATTACK);
             }
         }

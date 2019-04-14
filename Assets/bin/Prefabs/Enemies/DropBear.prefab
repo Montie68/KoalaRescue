@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeginingEnemyState: 0
+  fallSpeed:
+    Min: 1
+    Max: 3
 --- !u!61 &797941586047926450
 BoxCollider2D:
   m_ObjectHideFlags: 0
