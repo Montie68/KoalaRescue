@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enemies
+namespace DBREnemies
 {
 
     public class EnemiesSpawner : MonoBehaviour

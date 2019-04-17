@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using MoreMountains.Tools;
 
-namespace Enemies
+namespace DBREnemies
 {
     [CustomEditor(typeof(EnemiesSpawner))]
     [InitializeOnLoad]

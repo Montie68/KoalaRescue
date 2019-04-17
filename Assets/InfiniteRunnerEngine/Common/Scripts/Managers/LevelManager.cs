@@ -33,12 +33,18 @@ namespace MoreMountains.InfiniteRunnerEngine
 		public float RunningTime { get; protected set; }
 	    /// the amount of points a player gets per second
 	    public float PointsPerSecond = 20;
+        [Space(5)]
+        [Information("To use the distance As a score set to True. Set PointsPerSecond to zero to avoid additional points being added to the score.", InformationAttribute.InformationType.Info,false)]
+        public bool ScoreDistacePoints = false;
 	    /// the text that will be shown (if not empty) at the start of the level
 		[Multiline]
 	    public String InstructionsText;
 
+        public String ScoreFormat = "000 000 000";
+        public String DistanceFormat = "m";
 
-	    [Space(10)]
+
+        [Space(10)]
 		[Header("Level Bounds")]
 		/// the line after which objects can be recycled
 		public Bounds RecycleBounds;
@@ -178,12 +184,13 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        GameManager.Instance.SetStatus(GameManager.GameStatus.GameInProgress);
 			GameManager.Instance.AutoIncrementScore(true);
 			MMEventManager.TriggerEvent(new MMGameEvent("GameStart"));
-	    }
 
-		/// <summary>
-		/// Instantiates all the playable characters and feeds them to the gameManager
-		/// </summary>
-	    protected virtual void InstantiateCharacters()
+        }
+
+        /// <summary>
+        /// Instantiates all the playable characters and feeds them to the gameManager
+        /// </summary>
+        protected virtual void InstantiateCharacters()
 	    {
 			CurrentPlayableCharacters = new List<PlayableCharacter>();
             /// we go through the list of playable characters and instantiate them while adding them to the list we'll use from any class to access the
@@ -275,7 +282,9 @@ namespace MoreMountains.InfiniteRunnerEngine
 			_started = DateTime.UtcNow;
 
 			// we increment the total distance traveled so far
+            if (GameManager.Instance.Status  == GameManager.GameStatus.GameInProgress)
 			DistanceTraveled = DistanceTraveled + Speed * Time.fixedDeltaTime;
+            
 			
 			// if we can still accelerate, we apply the level's speed acceleration
 			if (Speed<MaximumSpeed)

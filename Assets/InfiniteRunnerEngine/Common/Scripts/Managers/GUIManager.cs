@@ -126,9 +126,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        Text gameOverScreenTextObject = GameOverScreen.transform.Find("GameOverScreenText").GetComponent<Text>();
 	        if (gameOverScreenTextObject!= null)
 	        {
-	            gameOverScreenTextObject.text="GAME OVER\nYOUR SCORE : "+Mathf.Round(GameManager.Instance.Points);
-	        }
-		}
+	            gameOverScreenTextObject.text="GAME OVER\nDISTANCE TRAVELED : "+Mathf.Round(GameManager.Instance.Points);
+                if (LevelManager.Instance.ScoreDistacePoints)
+                    gameOverScreenTextObject.text += LevelManager.Instance.DistanceFormat;
+
+            }
+        }
 			
 		/// <summary>
 		/// Sets the text to the game manager's points.
@@ -138,7 +141,8 @@ namespace MoreMountains.InfiniteRunnerEngine
 			if (PointsText==null)
 				return;
 
-			PointsText.text=GameManager.Instance.Points.ToString("000 000 000");	
+			PointsText.text=GameManager.Instance.Points.ToString(LevelManager.Instance.ScoreFormat);
+            if (LevelManager.Instance.ScoreDistacePoints) PointsText.text += LevelManager.Instance.DistanceFormat;
 		}
 		
 		/// <summary>

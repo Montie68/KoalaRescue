@@ -74,3 +74,27 @@ MonoBehaviour:
     UnlockedSound: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
     ProgressTarget: 10
     ProgressCurrent: 0
+  - AchievementID: theSprinter
+    AchievementType: 1
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: The Sprinter
+    Description: Passed 100m
+    Points: 0
+    LockedImage: {fileID: 0}
+    UnlockedImage: {fileID: 21300006, guid: a4362dfa101b2c94a96833b5545dbedc, type: 3}
+    UnlockedSound: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
+    ProgressTarget: 100
+    ProgressCurrent: 0
+  - AchievementID: theMiddleDistanceRunner
+    AchievementType: 1
+    HiddenAchievement: 0
+    UnlockedStatus: 0
+    Title: the Middle Distance Runner
+    Description: Passed 500m
+    Points: 0
+    LockedImage: {fileID: 0}
+    UnlockedImage: {fileID: 21300006, guid: a4362dfa101b2c94a96833b5545dbedc, type: 3}
+    UnlockedSound: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
+    ProgressTarget: 500
+    ProgressCurrent: 0

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿/*
+using UnityEngine;
 using UnityEditor;
 
 public class CreateNewPrefab : EditorWindow
@@ -41,4 +42,4 @@ public class CreateNewPrefab : EditorWindow
 		Object prefab = PrefabUtility.CreateEmptyPrefab(localPath);
 		PrefabUtility.ReplacePrefab(obj, prefab, ReplacePrefabOptions.ConnectToPrefab);
 	}
-}
+}*/

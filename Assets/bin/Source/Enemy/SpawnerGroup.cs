@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Enemies
+namespace DBREnemies
 {
     public class SpawnerGroup : MonoBehaviour
     {
@@ -26,7 +26,6 @@ namespace Enemies
         private void OnEnable()
         {
             int spawner = Random.Range(0, Spawners.Count);
-            Debug.Log("Spawner: " + spawner.ToString());
 
             for (int i = 0; i  < Spawners.Count; i++)
             {

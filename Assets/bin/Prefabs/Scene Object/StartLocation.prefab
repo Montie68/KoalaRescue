@@ -419,7 +419,7 @@ MonoBehaviour:
   Speed: 10
   Acceleration: 0
   Direction: {x: -1, y: 0, z: 0}
-  DirectionCanBeChangedBySpawner: 1
+  DirectionCanBeChangedBySpawner: 0
 --- !u!61 &5153148583644699914
 BoxCollider2D:
   m_ObjectHideFlags: 0

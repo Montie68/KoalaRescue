@@ -23,6 +23,7 @@ namespace MoreMountains.Tools
 		public virtual void Destroy()
 		{
 			gameObject.SetActive(false);
+            gameObject.transform.position = new Vector3(0, 0, 0);
 		}
 
 		/// <summary>

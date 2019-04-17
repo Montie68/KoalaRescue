@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Enemies {
+namespace DBREnemies {
     [RequireComponent(typeof(BoxCollider2D))]
     public class EnemyActionTrigger : MonoBehaviour
     {

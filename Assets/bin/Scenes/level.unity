@@ -411,7 +411,7 @@ RectTransform:
   - {fileID: 2100120543}
   - {fileID: 1281514161}
   m_Father: {fileID: 845055648}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -811,7 +811,7 @@ Camera:
   m_GameObject: {fileID: 329143308}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -1136,14 +1136,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: TotalLives
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
-      propertyPath: TimeScale
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1266,25 +1262,28 @@ MonoBehaviour:
   PlayableCharacters:
   - {fileID: 11483956, guid: 71a5a2cf71ee85143b79f2b726ab594e, type: 3}
   DistanceBetweenCharacters: 1
-  PointsPerSecond: 10
+  PointsPerSecond: 0
+  ScoreDistacePoints: 1
   InstructionsText: 'Desktop : Press space or A (pad) to jump.
 
     Mobile : Tap anywhere
 
     Try double jumping!'
+  ScoreFormat: 000
+  DistanceFormat: m
   RecycleBounds:
-    m_Center: {x: 90, y: 25, z: 0}
-    m_Extent: {x: 130, y: 50, z: 0}
+    m_Center: {x: 28, y: 15, z: 0}
+    m_Extent: {x: 40, y: 30, z: 0}
   DeathBounds:
-    m_Center: {x: 11.4, y: 5, z: 0}
-    m_Extent: {x: 12, y: 10.4, z: 0}
+    m_Center: {x: 11.4, y: 11, z: 0}
+    m_Extent: {x: 12, y: 14, z: 0}
   InitialSpeed: 5
   MaximumSpeed: 15
   SpeedAcceleration: 0.05
   IntroFadeDuration: 0.5
   OutroFadeDuration: 1
   StartCountdown: 3
-  StartText: Ready!
+  StartText: Go!
   ControlScheme: 0
   LifeLostExplosion: {fileID: 184460, guid: 2bfa6f1578b3ec0408e74b5cbbca104d, type: 3}
 --- !u!4 &621938743
@@ -1299,7 +1298,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688864613
 GameObject:
@@ -1482,7 +1481,7 @@ Transform:
   - {fileID: 798710342}
   - {fileID: 845055648}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788537742
 GameObject:
@@ -1502,7 +1501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &788537743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1515,7 +1514,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 845055648}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1697,9 +1696,9 @@ RectTransform:
   - {fileID: 884423888}
   - {fileID: 151129658}
   - {fileID: 984842118}
+  - {fileID: 1823692292}
   - {fileID: 161276009}
   - {fileID: 788537743}
-  - {fileID: 1823692292}
   - {fileID: 1391616197}
   m_Father: {fileID: 721711301}
   m_RootOrder: 1
@@ -2006,7 +2005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &984842118
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3593,7 +3592,7 @@ RectTransform:
   - {fileID: 233306622}
   - {fileID: 1344768212}
   m_Father: {fileID: 845055648}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3690,8 +3689,8 @@ MonoBehaviour:
   Pool:
   - GameObjectToPool: {fileID: 670277349397045950, guid: b87dd782d7e87a64a9480a1b4cd62e56,
       type: 3}
-    PoolSize: 3
-    PoolCanExpand: 1
+    PoolSize: 1
+    PoolCanExpand: 0
     Enabled: 1
   - GameObjectToPool: {fileID: 670277349397045950, guid: 06d9461565694a84dbe36aefe503beb1,
       type: 3}
@@ -3736,13 +3735,13 @@ MonoBehaviour:
   OnlySpawnWhileGameInProgress: 0
   InitialDelay: 0
   GapOrigin: 0
-  MinimumGap: {x: 0, y: 0, z: 0}
-  MaximumGap: {x: 0, y: 0, z: 0}
+  MinimumGap: {x: -0.01, y: 0, z: 0}
+  MaximumGap: {x: 0.01, y: 0, z: 0}
   MinimumYClamp: 0
   MaximumYClamp: 0
-  MinimumZClamp: -4
-  MaximumZClamp: 4
-  SpawnRotatedToDirection: 1
+  MinimumZClamp: 0
+  MaximumZClamp: 0
+  SpawnRotatedToDirection: 0
 --- !u!4 &1939311151
 Transform:
   m_ObjectHideFlags: 0
@@ -3755,7 +3754,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974377411
 GameObject:

@@ -23,8 +23,9 @@ namespace MoreMountains.InfiniteRunnerEngine
 	    public enum GameStatus { BeforeGameStart, GameInProgress, Paused, GameOver, LifeLost, GoalReached };
 	    /// the current status of the game
 	    public GameStatus Status{ get; protected set; }
+        protected bool ScoreDistacePoints { get; private set; }
 
-	    public delegate void GameManagerInspectorRedraw();
+        public delegate void GameManagerInspectorRedraw();
 	    // Declare the event to which editor code will hook itself.
 	    public event GameManagerInspectorRedraw GameManagerInspectorNeedRedraw;
 
@@ -40,6 +41,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// </summary>
 	    protected virtual void Start()
 		{
+            ScoreDistacePoints = LevelManager.Instance.ScoreDistacePoints;
 			Application.targetFrameRate = 300;
 	        CurrentLives = TotalLives;
 	        _savedTimeScale = TimeScale;
@@ -74,7 +76,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 			TimeScale = 1f;
 			GameManager.Instance.SetStatus(GameStatus.GameInProgress);
 			MMEventManager.TriggerEvent(new MMGameEvent("GameStart"));
-			GUIManager.Instance.RefreshPoints (); //TODO move to GUImanager
+            GUIManager.Instance.RefreshPoints (); //TODO move to GUImanager
 		}
 
 		/// <summary>
@@ -99,13 +101,27 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// <returns>The score.</returns>
 	    protected virtual IEnumerator IncrementScore()
 		{
+            int LastPoints = 0;
 	        while (true)
 	        {
-	            if ((GameManager.Instance.Status == GameStatus.GameInProgress) && (_pointsPerSecond!=0) )
-	            {
-	                AddPoints(_pointsPerSecond / 100);
-	            }
-	            yield return new WaitForSeconds(0.01f);
+                if ((GameManager.Instance.Status == GameStatus.GameInProgress) && (_pointsPerSecond != 0))
+                {
+
+                     AddPoints(_pointsPerSecond / 100);
+                }
+                else if ((GameManager.Instance.Status == GameStatus.GameInProgress|| 
+                    GameManager.Instance.Status == GameStatus.BeforeGameStart) && 
+                    (ScoreDistacePoints ))
+                     {
+
+                        if ((Points - LastPoints) >= 1)
+                        {
+                            MMEventManager.TriggerEvent(new MMGameEvent("DistaceIncrease"));
+                            LastPoints = (int)Points;
+                        }
+                        SetPoints(LevelManager.Instance.DistanceTraveled);
+                     }
+                yield return new WaitForSeconds(0.01f);
 	        }
 	    }
 		

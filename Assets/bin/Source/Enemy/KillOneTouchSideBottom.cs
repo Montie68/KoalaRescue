@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.InfiniteRunnerEngine;
 
-namespace Enemies {
+namespace DBREnemies {
     public class KillOneTouchSideBottom : KillsPlayerOnTouch
     {
         public Enemy EnemyController = null;

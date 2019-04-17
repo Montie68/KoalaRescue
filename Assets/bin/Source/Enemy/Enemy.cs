@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Enemies {
+namespace DBREnemies {
     public class Enemy : MonoBehaviour
     {
         protected EnemyState enemyState;
