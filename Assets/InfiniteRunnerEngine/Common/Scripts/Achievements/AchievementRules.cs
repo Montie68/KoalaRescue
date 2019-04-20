@@ -22,12 +22,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 				// if the game just started, we try to unlock an achievement won when starting a game, any game
 				case "GameStart":
 					MMAchievementManager.UnlockAchievement("theFirestarter");
-					break;
+                    MMAchievementManager.SetProgress("theSprinter", 0);
+                    MMAchievementManager.SetProgress("theMiddleDistanceRunner", 0);
+                    break;
 				// if we lose a life, we try to unlock an achievement for that
 				case "LifeLost":
 					MMAchievementManager.UnlockAchievement("theEndOfEverything");
-                    MMAchievementManager.SetProgress("theSprinter", 0);
-                    MMAchievementManager.SetProgress("theMiddleDistanceRunner", 0);
                     break;
 				// we try to trigger an achievement for pressing pause (yes these achievements are easy to get)
 				case "Pause":

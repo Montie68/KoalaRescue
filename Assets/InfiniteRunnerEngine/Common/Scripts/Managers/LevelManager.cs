@@ -33,7 +33,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		public float RunningTime { get; protected set; }
 	    /// the amount of points a player gets per second
 	    public float PointsPerSecond = 20;
-        [Space(5)]
+        [Space(10)]
         [Information("To use the distance As a score set to True. Set PointsPerSecond to zero to avoid additional points being added to the score.", InformationAttribute.InformationType.Info,false)]
         public bool ScoreDistacePoints = false;
 	    /// the text that will be shown (if not empty) at the start of the level
@@ -101,6 +101,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// <summary>
 		/// Initialization
 		/// </summary>
+        /// 
 		protected virtual void Start()
 		{
 	        Speed = InitialSpeed;
@@ -126,11 +127,11 @@ namespace MoreMountains.InfiniteRunnerEngine
 
 	        PrepareStart();
 		}
-		
-		/// <summary>
-		/// Handles everything before the actual start of the game.
-		/// </summary>
-		protected virtual void PrepareStart()
+
+        /// <summary>
+        /// Handles everything before the actual start of the game.
+        /// </summary>
+        protected virtual void PrepareStart()
 		{		
 			//if we're supposed to show a countdown we schedule it, otherwise we just start the level
 			if (StartCountdown>0)
@@ -143,7 +144,6 @@ namespace MoreMountains.InfiniteRunnerEngine
 	            LevelStart();
 	        }	
 		}
-		
 		/// <summary>
 		/// Handles the initial start countdown display
 		/// </summary>
