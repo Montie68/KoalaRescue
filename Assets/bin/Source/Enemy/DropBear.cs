@@ -8,24 +8,17 @@ namespace DBREnemies
 {
     public class DropBear : Enemy
     {
-        public EnemyState BeginingEnemyState;
+        public EnemyState BeginingEnemyState = EnemyState.IDEL;
         private Rigidbody2D rb;
         private float LocalGravity = 0.0f;
 
-        [Serializable]
-        public class FallSpeed
-        {
-            public float Min = 0f;
-            public float Max = 0f;
-        };
-
-        [SerializeField]
         public FallSpeed fallSpeed;
 
         // Start is called before the first frame update
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
+            rb.isKinematic = true;
             SetState(BeginingEnemyState);
         }
 
@@ -53,10 +46,7 @@ namespace DBREnemies
            
             LocalGravity =  (levelManager.Speed - levelManager.InitialSpeed) ;
 
-            if (LocalGravity < fallSpeed.Min) LocalGravity = fallSpeed.Min;
-            else if (LocalGravity > fallSpeed.Max) LocalGravity = fallSpeed.Max;
-
-            rb.gravityScale = LocalGravity;
+            rb.gravityScale = fallSpeed.Clamp(LocalGravity);
         }
         private void OnDisable()
         {
@@ -68,6 +58,7 @@ namespace DBREnemies
             rb.isKinematic = true;
             gameObject.SetActive(false);
             SetState(EnemyState.IDEL);
+            base.Die();
         }
     }
 }
