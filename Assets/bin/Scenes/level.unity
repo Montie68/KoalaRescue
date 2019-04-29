@@ -1272,8 +1272,8 @@ MonoBehaviour:
   ScoreFormat: 000
   DistanceFormat: m
   RecycleBounds:
-    m_Center: {x: 28, y: 15, z: 0}
-    m_Extent: {x: 40, y: 30, z: 0}
+    m_Center: {x: 18, y: 15, z: 0}
+    m_Extent: {x: 25, y: 20, z: 0}
   DeathBounds:
     m_Center: {x: 8, y: 11, z: 0}
     m_Extent: {x: 12, y: 14, z: 0}
@@ -3780,7 +3780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939311148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: 0, z: 0}
+  m_LocalPosition: {x: 20, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

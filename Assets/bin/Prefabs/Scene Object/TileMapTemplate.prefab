@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 1427581519272082497}
   - component: {fileID: 1748748897487022243}
   - component: {fileID: 7036678465710937053}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TileMapTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
