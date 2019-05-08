@@ -8,15 +8,19 @@ namespace DBRObjects
     {
         [Range(0f, 1.0f)]
         public float ChanceOfSpawn = 1.0f;
-        public List<GameObject> Spawners = null;
+        public List<GameObject> SpawObject = null;
         // Start is called before the first frame update
 
-        public virtual void Awake()
+        void Awake()
         {
-            if (Spawners == null)
+            Begin();
+        }
+        public virtual void Begin()
+        {
+            if (SpawObject == null)
             {
                 Debug.LogError("No Coin Spawners Assigned");
-                Spawners = new List<GameObject>();
+                SpawObject = new List<GameObject>();
                 Application.Quit();
             }
         }
