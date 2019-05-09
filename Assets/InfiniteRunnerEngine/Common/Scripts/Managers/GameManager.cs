@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.Tools;
+using System;
 
 namespace MoreMountains.InfiniteRunnerEngine
 {	
@@ -13,12 +14,16 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// the number of lives the player gets (you lose a life when your character (or your characters all) die.
 		/// lose all lives you lose the game and your points.
 		public int TotalLives = 3;
-	    /// The current number of lives
-	    public int CurrentLives { get; protected set;  }
+
+
+        /// The current number of lives
+        public int CurrentLives { get; protected set;  }
 		/// the current number of game points
 		public float Points { get; protected set; }
-		/// the current time scale
-		public float TimeScale = 1;
+        public int Gold { get; protected set; }
+
+        /// the current time scale
+        public float TimeScale = 1;
 	    /// the various states the game can be in
 	    public enum GameStatus { BeforeGameStart, GameInProgress, Paused, GameOver, LifeLost, GoalReached };
 	    /// the current status of the game
@@ -36,10 +41,10 @@ namespace MoreMountains.InfiniteRunnerEngine
 	    protected GameStatus _statusBeforePause;
 		protected Coroutine _autoIncrementCoroutine;
 
-		/// <summary>
-		/// Initialization
-		/// </summary>
-	    protected virtual void Start()
+        /// <summary>
+        /// Initialization
+        /// </summary>
+        protected virtual void Start()
 		{
             ScoreDistacePoints = LevelManager.Instance.ScoreDistacePoints;
 			Application.targetFrameRate = 300;
@@ -138,12 +143,20 @@ namespace MoreMountains.InfiniteRunnerEngine
 				GUIManager.Instance.RefreshPoints ();
 			}
 		}
-		
-		/// <summary>
-		/// use this to set the current points to the one you pass as a parameter
-		/// </summary>
-		/// <param name="points">Points.</param>
-		public virtual void SetPoints(float points)
+
+        internal void AddCoins(int pointsToAdd)
+        {
+            Gold += pointsToAdd;
+            if (GUIManager.Instance != null)
+            {
+                GUIManager.Instance.RefreshGold();
+            }
+        }
+        /// <summary>
+        /// use this to set the current points to the one you pass as a parameter
+        /// </summary>
+        /// <param name="points">Points.</param>
+        public virtual void SetPoints(float points)
 		{
 			Points = points;
 			if (GUIManager.Instance!=null)

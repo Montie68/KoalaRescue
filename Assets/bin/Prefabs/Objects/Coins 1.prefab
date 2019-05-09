@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6116288590686446231}
   m_Layer: 0
-  m_Name: Coins
+  m_Name: Coins 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,11 +45,11 @@ GameObject:
   - component: {fileID: 2026261501633763848}
   - component: {fileID: 1746061543174276359}
   - component: {fileID: 2099074448565823122}
-  - component: {fileID: 3274260628061009367}
   - component: {fileID: 1421267531725024811}
   - component: {fileID: 2184537850308480763}
+  - component: {fileID: 5338003682409484787}
   m_Layer: 0
-  m_Name: CaveRacerCoin (14)
+  m_Name: DolleryDoos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6283241160447102405}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.44, y: 0, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6116288590686446231}
@@ -131,21 +131,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0054630935}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &3274260628061009367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6283241160447102405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4038c69f3ecb34a3ab2a6dc680ff2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickEffect: {fileID: 135252, guid: 5bbfb976242c6c14bab90b02a059df0d, type: 3}
-  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
-  PointsToAdd: 10
 --- !u!114 &1421267531725024811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +158,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RotationSpace: 1
   RotationSpeed: {x: 0, y: 200, z: 0}
+--- !u!114 &5338003682409484787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6283241160447102405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7115240b6f6094d4a9e448dfafe2481a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickEffect: {fileID: 1936623149271289761, guid: 6e93b811c3b15b842b988570c9b55a49,
+    type: 3}
+  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
+  PointsToAdd: 1
 --- !u!1 &6859159307074771766
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,11 +186,11 @@ GameObject:
   - component: {fileID: 871168919542929769}
   - component: {fileID: 2379169382543160331}
   - component: {fileID: 440794290470965531}
-  - component: {fileID: 6619604019279333862}
   - component: {fileID: 9004240320051744803}
   - component: {fileID: 7145578018931431185}
+  - component: {fileID: 3025397385141656959}
   m_Layer: 0
-  m_Name: CaveRacerCoin (15)
+  m_Name: DolleryDoos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6859159307074771766}
   m_LocalRotation: {x: 0.0049364693, y: 0.7070896, z: 0.0049364693, w: 0.7070896}
-  m_LocalPosition: {x: 1.43, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6116288590686446231}
@@ -271,21 +272,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0054630935}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &6619604019279333862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6859159307074771766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4038c69f3ecb34a3ab2a6dc680ff2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickEffect: {fileID: 135252, guid: 5bbfb976242c6c14bab90b02a059df0d, type: 3}
-  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
-  PointsToAdd: 10
 --- !u!114 &9004240320051744803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +299,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RotationSpace: 1
   RotationSpeed: {x: 0, y: 200, z: 0}
+--- !u!114 &3025397385141656959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859159307074771766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7115240b6f6094d4a9e448dfafe2481a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickEffect: {fileID: 1936623149271289761, guid: 6e93b811c3b15b842b988570c9b55a49,
+    type: 3}
+  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
+  PointsToAdd: 1
 --- !u!1 &7328191524259753614
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,11 +327,11 @@ GameObject:
   - component: {fileID: 4278339683608081743}
   - component: {fileID: 6183493677045528857}
   - component: {fileID: 2113892866167076870}
-  - component: {fileID: 8193957809771559578}
   - component: {fileID: 5091358644209210847}
   - component: {fileID: 8310720174643198751}
+  - component: {fileID: 437862303342785945}
   m_Layer: 0
-  m_Name: CaveRacerCoin (13)
+  m_Name: DolleryDoos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,21 +413,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0054630935}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &8193957809771559578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7328191524259753614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4038c69f3ecb34a3ab2a6dc680ff2114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickEffect: {fileID: 135252, guid: 5bbfb976242c6c14bab90b02a059df0d, type: 3}
-  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
-  PointsToAdd: 10
 --- !u!114 &5091358644209210847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,3 +440,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RotationSpace: 1
   RotationSpeed: {x: 0, y: 200, z: 0}
+--- !u!114 &437862303342785945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328191524259753614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7115240b6f6094d4a9e448dfafe2481a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickEffect: {fileID: 1936623149271289761, guid: 6e93b811c3b15b842b988570c9b55a49,
+    type: 3}
+  PickSoundFx: {fileID: 8300000, guid: 097033f4e68a6ed4da71a75ebbb55aa3, type: 3}
+  PointsToAdd: 1

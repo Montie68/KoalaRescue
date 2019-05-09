@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.Tools;
+using System;
 
 namespace MoreMountains.InfiniteRunnerEngine
 {	
@@ -25,11 +26,13 @@ namespace MoreMountains.InfiniteRunnerEngine
 		public Text CountdownText;
 		/// the screen used for all fades
 		public Image Fader;
-						
-		/// <summary>
-		/// Initialization
-		/// </summary>
-		public virtual void Initialize()
+
+        public Text CoinText;
+
+        /// <summary>
+        /// Initialization
+        /// </summary>
+        public virtual void Initialize()
 		{
 			RefreshPoints();
 	        InitializeLives();
@@ -144,11 +147,17 @@ namespace MoreMountains.InfiniteRunnerEngine
 			PointsText.text=GameManager.Instance.Points.ToString(LevelManager.Instance.ScoreFormat);
             if (LevelManager.Instance.ScoreDistacePoints) PointsText.text += LevelManager.Instance.DistanceFormat;
 		}
-		
-		/// <summary>
-		/// Sets the level name in the HUD
-		/// </summary>
-		public virtual void SetLevelName(string name)
+        internal void RefreshGold()
+        {
+            if (CoinText == null)
+                return;
+
+            CoinText.text = GameManager.Instance.Gold.ToString(LevelManager.Instance.CoinFormat);
+        }
+        /// <summary>
+        /// Sets the level name in the HUD
+        /// </summary>
+        public virtual void SetLevelName(string name)
 		{
 			if (LevelText==null)
 				return;
@@ -171,14 +180,16 @@ namespace MoreMountains.InfiniteRunnerEngine
 				StartCoroutine(MMFade.FadeImage(Fader,duration, new Color(0,0,0,1f)));
 			else
 				StartCoroutine(MMFade.FadeImage(Fader,duration,new Color(0,0,0,0f)));
-		}		
+		}
 
-		/// <summary>
-		/// Fades the fader to the alpha set as parameter
-		/// </summary>
-		/// <param name="newColor">The color to fade to.</param>
-		/// <param name="duration">Duration.</param>
-		public virtual void FaderTo(Color newColor,float duration)
+
+
+        /// <summary>
+        /// Fades the fader to the alpha set as parameter
+        /// </summary>
+        /// <param name="newColor">The color to fade to.</param>
+        /// <param name="duration">Duration.</param>
+        public virtual void FaderTo(Color newColor,float duration)
 		{
 			if (Fader==null)
 			{

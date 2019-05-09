@@ -31,8 +31,9 @@ namespace MoreMountains.InfiniteRunnerEngine
 		public float DistanceBetweenCharacters = 1f;
 		/// the elapsed time since the start of the level
 		public float RunningTime { get; protected set; }
-	    /// the amount of points a player gets per second
-	    public float PointsPerSecond = 20;
+
+        /// the amount of points a player gets per second
+        public float PointsPerSecond = 20;
         [Space(10)]
         [Information("To use the distance As a score set to True. Set PointsPerSecond to zero to avoid additional points being added to the score.", InformationAttribute.InformationType.Info,false)]
         public bool ScoreDistacePoints = false;
@@ -42,6 +43,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 
         public String ScoreFormat = "000 000 000";
         public String DistanceFormat = "m";
+        public string CoinFormat = "$ 000";
 
 
         [Space(10)]
