@@ -88,6 +88,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 	    [Header("Life Lost")]
 	    /// the effect we instantiate when a life is lost
 	    public GameObject LifeLostExplosion;
+        public int ContinueCost = 20;
 
 	    // protected stuff
 	    protected DateTime _started;
@@ -146,6 +147,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 	            LevelStart();
 	        }	
 		}
+
+        public virtual void Continue()
+        {
+            PrepareStart();
+            InstantiateCharacters();
+        }
 		/// <summary>
 		/// Handles the initial start countdown display
 		/// </summary>
@@ -486,13 +493,21 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        GameManager.Instance.SetPoints(_savedPoints);
 	        GameManager.Instance.LoseLives(1);
 
-	        if (GameManager.Instance.CurrentLives<=0)
+	        if (GameManager.Instance.CurrentLives<=0 && GameManager.Instance.Continues <= 0)
 			{
 	            GUIManager.Instance.SetGameOverScreen(true);
 	            GameManager.Instance.SetStatus(GameManager.GameStatus.GameOver);
 				MMEventManager.TriggerEvent(new MMGameEvent("GameOver"));
 	        }
-	    }
+            else if (GameManager.Instance.CurrentLives <= 0 && GameManager.Instance.Continues > 0)
+            {
+                GameManager.Instance.Pause();
+                GUIManager.Instance.SetGameOverScreenContinue(true);
+                GameManager.Instance.SetStatus(GameManager.GameStatus.Paused);
+                MMEventManager.TriggerEvent(new MMGameEvent("GameOverContinue"));
+                GUIManager.Instance.SetPause(false);
+            }
+        }
 
 	    /// <summary>
 	    /// Override this if needed

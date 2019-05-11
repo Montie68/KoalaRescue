@@ -16,8 +16,9 @@ namespace MoreMountains.InfiniteRunnerEngine
 		public GameObject PauseScreen;	
 	    /// the game over screen game object
 	    public GameObject GameOverScreen;
-	    /// the object that will contain lives hearts
-	    public GameObject HeartsContainer;
+        public GameObject GameOverContinueScreen;
+        /// the object that will contain lives hearts
+        public GameObject HeartsContainer;
 	    /// the points counter
 	    public Text PointsText;
 		/// the level display
@@ -135,11 +136,22 @@ namespace MoreMountains.InfiniteRunnerEngine
 
             }
         }
-			
-		/// <summary>
-		/// Sets the text to the game manager's points.
-		/// </summary>
-		public virtual void RefreshPoints()
+        internal void SetGameOverScreenContinue(bool state)
+        {
+            GameOverContinueScreen.SetActive(state);
+            Text gameOverContinueScreenTextObject = GameOverContinueScreen.transform.Find("GameOverScreenText").GetComponent<Text>();
+            if (gameOverContinueScreenTextObject != null)
+            {
+                gameOverContinueScreenTextObject.text = "GAME OVER\nDISTANCE TRAVELED : " + Mathf.Round(GameManager.Instance.Points);
+                if (LevelManager.Instance.ScoreDistacePoints)
+                    gameOverContinueScreenTextObject.text += LevelManager.Instance.DistanceFormat;
+
+            }
+        }
+        /// <summary>
+        /// Sets the text to the game manager's points.
+        /// </summary>
+        public virtual void RefreshPoints()
 		{
 			if (PointsText==null)
 				return;
@@ -225,5 +237,6 @@ namespace MoreMountains.InfiniteRunnerEngine
 			this.MMEventStopListening<MMGameEvent>();
 		}
 
-	}
+
+    }
 }

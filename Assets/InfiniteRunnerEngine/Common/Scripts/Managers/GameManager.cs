@@ -15,6 +15,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// lose all lives you lose the game and your points.
 		public int TotalLives = 3;
 
+        public int Continues = 1;
 
         /// The current number of lives
         public int CurrentLives { get; protected set;  }
@@ -55,6 +56,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        {
 				GUIManager.Instance.Initialize();
 	        }
+            AddCoins(DBRObjects.InGameCurrency.LoadCurrency());
 	    }
 
 	    public virtual void SetPointsPerSecond(float newPointsPerSecond)
@@ -147,6 +149,7 @@ namespace MoreMountains.InfiniteRunnerEngine
         internal void AddCoins(int pointsToAdd)
         {
             Gold += pointsToAdd;
+            DBRObjects.InGameCurrency.SaveCurrency(Gold);
             if (GUIManager.Instance != null)
             {
                 GUIManager.Instance.RefreshGold();
