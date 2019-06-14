@@ -100,12 +100,15 @@ namespace MoreMountains.InfiniteRunnerEngine
 		protected float _temporarySpeedFactor;
 		protected float _temporarySpeedFactorRemainingTime;
 		protected float _temporarySavedSpeed;
-			
-		/// <summary>
-		/// Initialization
-		/// </summary>
+
+        private bool ContinuePause = false;
+
+
+        /// <summary>
+        /// Initialization
+        /// </summary>
         /// 
-		protected virtual void Start()
+        protected virtual void Start()
 		{
 	        Speed = InitialSpeed;
 	        DistanceTraveled = 0;
@@ -152,6 +155,7 @@ namespace MoreMountains.InfiniteRunnerEngine
         {
             PrepareStart();
             InstantiateCharacters();
+            ContinuePause = false;
         }
 		/// <summary>
 		/// Handles the initial start countdown display
@@ -501,7 +505,8 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        }
             else if (GameManager.Instance.CurrentLives <= 0 && GameManager.Instance.Continues > 0)
             {
-                GameManager.Instance.Pause();
+                if (!ContinuePause) GameManager.Instance.Pause();
+                ContinuePause = true;
                 GUIManager.Instance.SetGameOverScreenContinue(true);
                 GameManager.Instance.SetStatus(GameManager.GameStatus.Paused);
                 MMEventManager.TriggerEvent(new MMGameEvent("GameOverContinue"));

@@ -29,6 +29,13 @@ namespace MoreMountains.InfiniteRunnerEngine
 	      	//GameManager.Instance.UnPause();
 			LevelManager.Instance.GotoLevel(SceneManager.GetActiveScene().name);
 	    }
+        /// <summary>
+        /// Resets the score.
+        /// </summary>
+        public virtual void ResetScore()
+        {
+            SingleHighScoreManager.ResetHighScore();
+        }
 
         /// <summary>
         /// Resumes the game
@@ -37,6 +44,7 @@ namespace MoreMountains.InfiniteRunnerEngine
         {
             GameManager.Instance.UnPause();
         }
+
         public async void Continue(int Lives = 1)
         {
             GUIManager.Instance.SetGameOverScreenContinue(false);
@@ -59,14 +67,6 @@ namespace MoreMountains.InfiniteRunnerEngine
             }
         }
 
-        /// <summary>
-        /// Resets the score.
-        /// </summary>
-        public virtual void ResetScore()
-	    {
-	    	SingleHighScoreManager.ResetHighScore();
-	    }
-
         private void HandleShowResult(ShowResult result)
         {
             switch (result)
@@ -82,9 +82,11 @@ namespace MoreMountains.InfiniteRunnerEngine
                     break;
                 case ShowResult.Skipped:
                     Debug.Log("The ad was skipped before reaching the end.");
+                    RestartLevel();
                     break;
                 case ShowResult.Failed:
                     Debug.LogError("The ad failed to be shown.");
+                    RestartLevel();
                     break;
             }
         }

@@ -25,7 +25,7 @@ namespace DBREnemies {
                 }
                 else
                 {
-                    TriggerEnter(collision.gameObject);
+                    base.TriggerEnter(collision.gameObject);
                 }
             }
         }
@@ -39,7 +39,7 @@ namespace DBREnemies {
                 }
                 else
                 {
-                    TriggerEnter(collision.gameObject);
+                    base.TriggerEnter(collision.gameObject);
                 }
             }
         }
