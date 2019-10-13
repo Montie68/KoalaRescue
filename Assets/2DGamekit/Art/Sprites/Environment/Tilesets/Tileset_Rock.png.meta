@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 6e1db66fc7e57884380659e0a55351f0
-timeCreated: 1516195363
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: Tileset_Rock_Floor01
@@ -128,7 +126,7 @@ TextureImporter:
     21300242: Tileset_Rock_CeilingCornerGrassSingleLeft
     21300244: Tileset_Rock_CeilingCornerGrassSingleRight
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -146,6 +144,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -156,7 +156,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -168,18 +168,21 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -189,7 +192,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -199,7 +203,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -296,6 +301,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0cd32edac205e044c91ba43e4e03bbe0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor0
       rect:
@@ -411,6 +422,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 73f1649db4ec082458b37b806cb1ac67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor1
       rect:
@@ -536,6 +553,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 707aa131ba2233c4aade361b138ed971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor2
       rect:
@@ -621,6 +644,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5baf568a678c9614d876ed9491c5929a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor3
       rect:
@@ -667,6 +696,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: bc6defd66bf569c4da5b43f48100ac65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor4
       rect:
@@ -770,6 +805,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f344007c07ded947b16efc85030f00e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor5
       rect:
@@ -844,6 +885,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: a2e1d5d8aea5277408beb973dc1d8b56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Floor6
       rect:
@@ -1162,6 +1209,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8966570d820fefa4892956ea59f1dfcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerOuterRight
       rect:
@@ -1329,6 +1382,12 @@ TextureImporter:
         - {x: 232.34766, y: 69.14209}
         - {x: 196.3335, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1c497e941f521014e9f466fb60377f0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft0
       rect:
@@ -1352,6 +1411,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 2706849116e180b4dbde33399551067b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill0
       rect:
@@ -1374,6 +1439,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 368fa94f127968d46a0ddcca2cfafb6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill1
       rect:
@@ -1396,6 +1467,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 72f8b73f7234ebf4baa05aab7c215a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill2
       rect:
@@ -1418,6 +1495,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: e9eaf5d25df51cd4daa055bf72170606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill3
       rect:
@@ -1440,6 +1523,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9b45bd974c082fb47a2b76072d27245a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill4
       rect:
@@ -1462,6 +1551,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: ab11be11c8318cc4793408a98e645d5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill5
       rect:
@@ -1484,6 +1579,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: bcfbe7535d4f29246bc002369e27123b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill6
       rect:
@@ -1506,6 +1607,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d8b6c593e0b4bb64290c092889878347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight0
       rect:
@@ -1531,6 +1638,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: a370d0af77f7893499e28b266f78bbf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft1
       rect:
@@ -1553,6 +1666,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d25683b56cf27634790f2f09bb5ce1f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill7
       rect:
@@ -1575,6 +1694,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b4905765176c48149ad892050550c98d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill8
       rect:
@@ -1597,6 +1722,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: e8f10b63683470441b1bcfcfe2cc82f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill9
       rect:
@@ -1619,6 +1750,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f56a3168022d2a43ae0fcef9d88b799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill10
       rect:
@@ -1641,6 +1778,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9040fe8009a160a49bc1e5c1c09b34bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Fill11
       rect:
@@ -1663,6 +1806,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: aa03bb5ea21d79743925d834646f9423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling0
       rect:
@@ -1685,6 +1834,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 97ef5dca238e6d147b1277a4f1d16287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling1
       rect:
@@ -1707,6 +1862,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 71b80c81df0f3974ea46532ce56e8a9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight1
       rect:
@@ -1730,6 +1891,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: f567507cd99013c4b98d520bc4dc9e97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft2
       rect:
@@ -1754,6 +1921,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 37558eb6473f4f048b8d4a2ac764be39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerOuterLeft
       rect:
@@ -1782,6 +1955,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d88e8b89f092ddd45885119b94be50dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling2
       rect:
@@ -1804,6 +1983,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e3dcd0b2b4d46c41a9395b6f5ca8f89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling3
       rect:
@@ -1829,6 +2014,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 39abc6fd8e77c4a44b00e9bef63b6168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling4
       rect:
@@ -1856,6 +2047,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 3b96ef0ca256a41489742a9ec048d55d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling5
       rect:
@@ -1878,6 +2075,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: edaa6b675dcc2674e86009d32b7e6929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_Ceiling6
       rect:
@@ -1900,6 +2103,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: f25281b1af166db46a31359124045c55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerOuterRight
       rect:
@@ -1924,6 +2133,12 @@ TextureImporter:
         - {x: 256, y: -110}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: db86d7a4a89b53740adc601c6699ed50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight2
       rect:
@@ -1947,6 +2162,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: -115.313965}
       tessellationDetail: 0
+      bones: []
+      spriteID: b477ded01f6798a4bba20b3b551df450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft3
       rect:
@@ -1972,6 +2193,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: a3fcc0f0f91d36746b7f416fe88b6019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock
       rect:
@@ -2144,6 +2371,12 @@ TextureImporter:
         - {x: 250, y: -254}
         - {x: 224.0741, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: b6f2a15d683fde646bdc4d69169213e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerRight0
       rect:
@@ -2172,6 +2405,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: ea7682d729683c945a77b5205b208393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerRight1
       rect:
@@ -2199,6 +2438,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7ee4a2bbb53114d4bbce0f17bce0daf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerRight2
       rect:
@@ -2229,6 +2474,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 151181db9342e7446877bd71a6f0a1b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerRight3
       rect:
@@ -2258,6 +2509,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b0c97893cbcd3024ba16e36edfd98613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight3
       rect:
@@ -2280,6 +2537,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9ae639141d45ec14e968efb5fceb5d14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft4
       rect:
@@ -2302,6 +2565,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8968adef9829e974ba9ef08b45da0b00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleBlock
       rect:
@@ -2427,6 +2696,12 @@ TextureImporter:
         - {x: 222, y: 130}
         - {x: -240.70374, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 434501245d16bb04a9c829b05f112570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerLeft0
       rect:
@@ -2456,6 +2731,12 @@ TextureImporter:
         - {x: 256, y: 243}
         - {x: 249, y: 241}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5d43a6c561acf0a4fac03aec8166bb6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerLeft1
       rect:
@@ -2485,6 +2766,12 @@ TextureImporter:
         - {x: 256, y: 243}
         - {x: 256, y: 243}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5a03d49b135b74f478ab53d0ce80c8ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerLeft2
       rect:
@@ -2514,6 +2801,12 @@ TextureImporter:
         - {x: 256, y: 243}
         - {x: 249, y: 241}
       tessellationDetail: 0
+      bones: []
+      spriteID: 944f62fb84b4fd24c8e4deb4c6c0da46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerInnerLeft3
       rect:
@@ -2543,6 +2836,12 @@ TextureImporter:
         - {x: 256, y: 243}
         - {x: 249, y: 241}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9feb44e6d2407f34392cdd0f11cc3090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight4
       rect:
@@ -2566,6 +2865,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d6e6555548e65064485c69ac085fbc4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft5
       rect:
@@ -2596,6 +2901,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 57154a4accd4eb644be980504cda17e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerSingleBlockLeft
       rect:
@@ -2621,6 +2932,12 @@ TextureImporter:
         - {x: 236.36932, y: 220.21094}
         - {x: 242.66595, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a478cb05a13048aaa710487708596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock0
       rect:
@@ -2714,6 +3031,12 @@ TextureImporter:
         - {x: 256, y: -221}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 1c0b1d7a26815e841bc7a018177d32ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock1
       rect:
@@ -2858,6 +3181,12 @@ TextureImporter:
         - {x: 256, y: -246}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 023c8626a41af444d8b434f02a958214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock2
       rect:
@@ -3014,6 +3343,12 @@ TextureImporter:
         - {x: 256, y: -219}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: a0cc44053f4efe449a1607743ceadc32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock3
       rect:
@@ -3073,6 +3408,12 @@ TextureImporter:
         - {x: 256, y: -249}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 9a76353b8c4c7c741a748b6a42f4cd81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock4
       rect:
@@ -3184,6 +3525,12 @@ TextureImporter:
         - {x: -241, y: -247}
         - {x: 256, y: -247}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0078086a5ef545a41aca05131fd7465b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorCornerSingleBlockRight
       rect:
@@ -3221,6 +3568,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: f20364766f2507347a5465a2400136ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight5
       rect:
@@ -3250,6 +3603,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: ceaf02b145ddae6458c4f11151f5d38f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeft6
       rect:
@@ -3275,6 +3634,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b08d076ddcb7aea4fa1bd287b020a1a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlockLeft
       rect:
@@ -3374,6 +3739,12 @@ TextureImporter:
         - {x: 256, y: -223}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: ad8d7ad16ae8d4748b88f0c2398d9b35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock5
       rect:
@@ -3707,6 +4078,12 @@ TextureImporter:
         - {x: 256, y: -235}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 53f24ea3f6deb5140a3c5f676f83fd79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlock6
       rect:
@@ -3789,6 +4166,12 @@ TextureImporter:
         - {x: 256, y: -251}
         - {x: 256, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 06a5bd4b6c77b3045bbab0553122f952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_FloorSingleBlockRight
       rect:
@@ -3964,6 +4347,12 @@ TextureImporter:
         - {x: 226.21997, y: 86.601074}
         - {x: 189.04688, y: 130}
       tessellationDetail: 0
+      bones: []
+      spriteID: 610de3ebb1b7651448d9592eeed1ef0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRight6
       rect:
@@ -3987,6 +4376,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d2584ece51f8f58479dd43b1acee6942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner0
       rect:
@@ -4009,6 +4404,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: e40c664becdb3a246997997e8b81250d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner1
       rect:
@@ -4031,6 +4432,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 428c31e35809adf4e83e951912a652c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner2
       rect:
@@ -4053,6 +4460,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: c9f31b47cb9b53b4b9012aacac97ae4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner3
       rect:
@@ -4075,6 +4488,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: f8d862a4b0813f2449c3734ee468acb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner4
       rect:
@@ -4097,6 +4516,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 53da1e1209e821d468c7046931776f8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner5
       rect:
@@ -4120,6 +4545,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: f1274c1adbaf6d64c9e50658d3f89473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCeilingCorner6
       rect:
@@ -4142,6 +4573,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 8367a516aedcb6b498cf6fcd7cffb6d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner0
       rect:
@@ -4164,6 +4601,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4366734835746a74985a43c4606c64bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner1
       rect:
@@ -4186,6 +4629,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 141d8a23bfbfd5148a6e5b59d68c5b80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner2
       rect:
@@ -4208,6 +4657,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 81cdd5bfc856c4f41bc2543511c4ae9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner3
       rect:
@@ -4230,6 +4685,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d5a2ee386a1be054097ff37d647102d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner4
       rect:
@@ -4252,6 +4713,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: cc1e4ada5d22d094390e810e74ebcc97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner5
       rect:
@@ -4274,6 +4741,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7f61faadc59785145a3b2a2b9a6a67e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallRightCeilingCorner6
       rect:
@@ -4296,6 +4769,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: bc46917319f34e849bcbea697fa38b10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumn0
       rect:
@@ -4322,6 +4801,12 @@ TextureImporter:
         - {x: 232, y: 212}
         - {x: 228, y: 221}
       tessellationDetail: 0
+      bones: []
+      spriteID: 116d77a1bd17dca498e090dd4e8688b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumn1
       rect:
@@ -4343,6 +4828,12 @@ TextureImporter:
         - {x: 245, y: 184}
         - {x: 245, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b2525254bc88ee499b5445dd2d9adf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumn2
       rect:
@@ -4362,6 +4853,12 @@ TextureImporter:
         - {x: 256, y: -254}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: b3b73cb21f55a8040940e7fc1f9df329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumnBottom
       rect:
@@ -4382,6 +4879,12 @@ TextureImporter:
         - {x: 256, y: -201}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 4315ef695b6979e4d8bd9410d5fa5d6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleBlockCorner_Left
       rect:
@@ -4403,6 +4906,12 @@ TextureImporter:
         - {x: 256, y: 246}
         - {x: 245, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 5bef15acc638f02439070adcac164934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleBlockCorner_Right
       rect:
@@ -4425,6 +4934,12 @@ TextureImporter:
         - {x: 256, y: -15}
         - {x: 256, y: 250}
       tessellationDetail: 0
+      bones: []
+      spriteID: b7f3ef1879a78304099016c9d58288ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallLeftCornerGrass
       rect:
@@ -4443,6 +4958,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 7355a2c4333703b459ace084bb6dbb2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_WallCornerRightGrass
       rect:
@@ -4462,6 +4983,12 @@ TextureImporter:
         - {x: 256, y: -83}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: d262b8acf4935864891369e030a87d4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumnCentreCorners
       rect:
@@ -4488,6 +5015,12 @@ TextureImporter:
         - {x: 256, y: 239}
         - {x: 256, y: 248}
       tessellationDetail: 0
+      bones: []
+      spriteID: c85e8c44a9dca3649937093a7221d33c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerGrassRight
       rect:
@@ -4508,6 +5041,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 20bae7f13531b114587b2106333f5946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerGrassLeft
       rect:
@@ -4533,6 +5072,12 @@ TextureImporter:
         - {x: 256, y: 239}
         - {x: 256, y: 248}
       tessellationDetail: 0
+      bones: []
+      spriteID: eca484fac5bd42c4b95943552a3412f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_SingleColumnCentreCeiling
       rect:
@@ -4559,6 +5104,12 @@ TextureImporter:
         - {x: 256, y: 239}
         - {x: 256, y: 248}
       tessellationDetail: 0
+      bones: []
+      spriteID: 6523e09db4bc3ef42a14d032f943efe9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerGrassSingleLeft
       rect:
@@ -4580,6 +5131,12 @@ TextureImporter:
         - {x: 256, y: -256}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 653d2bb997db19641add9b8ef2b4cb5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Tileset_Rock_CeilingCornerGrassSingleRight
       rect:
@@ -4599,9 +5156,23 @@ TextureImporter:
         - {x: 256, y: -119}
         - {x: 256, y: 256}
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a23778292cd6994aaa77f149e8e26f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
