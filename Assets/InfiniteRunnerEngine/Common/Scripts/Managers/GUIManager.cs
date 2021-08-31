@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.Tools;
 using System;
+using TMPro;
 
 namespace MoreMountains.InfiniteRunnerEngine
 {	
@@ -28,7 +29,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 		/// the screen used for all fades
 		public Image Fader;
 
-        public Text CoinText;
+        public TextMeshProUGUI CoinText;
 
         /// <summary>
         /// Initialization

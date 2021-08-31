@@ -192,12 +192,12 @@ namespace QuickEditor
                 case BuildTarget.StandaloneWindows: return BuildTargetGroup.Standalone; //Build a Windows standalone.
                 case BuildTarget.iOS: return BuildTargetGroup.iOS; //Build an iOS player.
                 case BuildTarget.Android: return BuildTargetGroup.Android; //Build an Android .apk standalone app.
-                case BuildTarget.StandaloneLinux: return BuildTargetGroup.Standalone; //Build a Linux standalone.
+              //  case BuildTarget.StandaloneLinux: return BuildTargetGroup.Standalone; //Build a Linux standalone.
                 case BuildTarget.StandaloneWindows64: return BuildTargetGroup.Standalone; //Build a Windows 64 - bit standalone.
                 case BuildTarget.WebGL: return BuildTargetGroup.WebGL; //WebGL.
                 case BuildTarget.WSAPlayer: return BuildTargetGroup.WSA; //Build an Windows Store Apps player.
                 case BuildTarget.StandaloneLinux64: return BuildTargetGroup.Standalone; //Build a Linux 64 - bit standalone.
-                case BuildTarget.StandaloneLinuxUniversal: return BuildTargetGroup.Standalone; //Build a Linux universal standalone.
+               // case BuildTarget.StandaloneLinuxUniversal: return BuildTargetGroup.Standalone; //Build a Linux universal standalone.
                 case BuildTarget.PS4: return BuildTargetGroup.PS4; //Build a PS4 Standalone.
                 case BuildTarget.XboxOne: return BuildTargetGroup.XboxOne; //Build a Xbox One Standalone.
 

@@ -56,7 +56,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        {
 				GUIManager.Instance.Initialize();
 	        }
-            AddCoins(DBRObjects.InGameCurrency.LoadCurrency());
+            //AddCoins(DBRObjects.InGameCurrency.LoadCurrency());
 	    }
 
 	    public virtual void SetPointsPerSecond(float newPointsPerSecond)
@@ -149,7 +149,8 @@ namespace MoreMountains.InfiniteRunnerEngine
         internal void AddCoins(int pointsToAdd)
         {
             Gold += pointsToAdd;
-            DBRObjects.InGameCurrency.SaveCurrency(Gold);
+            AddPoints(pointsToAdd);
+            //DBRObjects.InGameCurrency.SaveCurrency(Gold);
             if (GUIManager.Instance != null)
             {
                 GUIManager.Instance.RefreshGold();

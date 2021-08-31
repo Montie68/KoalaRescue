@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
-using UnityEngine.Advertisements;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using MoreMountains.Tools;
 using System.Threading.Tasks;
+//using UnityEngine.Advertisements;
+
 namespace MoreMountains.InfiniteRunnerEngine
 {	
 	/// <summary>
@@ -13,10 +14,12 @@ namespace MoreMountains.InfiniteRunnerEngine
 	{
 	    public string LevelName;
 
-		/// <summary>
-		/// Asks the LevelManager to go to a specified level
-		/// </summary>
-	    public virtual void GoToLevel()
+        /// <summary>
+        /// Asks the LevelManager to go to a specified level
+        /// </summary>
+        /// 
+
+        public virtual void GoToLevel()
 	    {
 	        LevelManager.Instance.GotoLevel(LevelName);
 	    }
@@ -55,10 +58,10 @@ namespace MoreMountains.InfiniteRunnerEngine
             GameManager.Instance.Continues -= 1;
             await Task.Delay(500);
             LevelManager.Instance.Continue();
-            GameManager.Instance.AddCoins(-LevelManager.Instance.ContinueCost);
+           // GameManager.Instance.AddCoins(-LevelManager.Instance.ContinueCost);
         }
 
-        public void PlayAdContinue(int Lives = 1)
+    /*    public void PlayAdContinue(int Lives = 1)
         {
             if (Advertisement.IsReady("rewardedVideo"))
             {
@@ -89,6 +92,6 @@ namespace MoreMountains.InfiniteRunnerEngine
                     RestartLevel();
                     break;
             }
-        }
+        }*/
     }
 }

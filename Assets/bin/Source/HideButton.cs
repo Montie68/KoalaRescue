@@ -10,14 +10,14 @@ namespace MoreMountains.InfiniteRunnerEngine
         // Update is called once per frame
         void OnEnable()
         {
-            if (GameManager.Instance.Gold < LevelManager.Instance.ContinueCost)
+           /* if (GameManager.Instance.Gold < LevelManager.Instance.ContinueCost)
             {
                 gameObject.SetActive(false);
             }
             else
             {
                 gameObject.SetActive(true);
-            }
+            }*/
         }
     }
 }

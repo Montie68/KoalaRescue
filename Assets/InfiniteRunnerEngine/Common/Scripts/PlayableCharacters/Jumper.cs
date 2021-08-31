@@ -161,7 +161,11 @@ namespace MoreMountains.InfiniteRunnerEngine
 				yield return 0;
 			}
 		}
-		
-				
-	}
+
+        public override void UpStart()
+        {
+            Jump();
+        }
+    }
+
 }

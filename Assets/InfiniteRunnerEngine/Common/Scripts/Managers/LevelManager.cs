@@ -154,7 +154,8 @@ namespace MoreMountains.InfiniteRunnerEngine
         public virtual void Continue()
         {
             PrepareStart();
-            InstantiateCharacters();
+            if (LevelManager.Instance.CurrentPlayableCharacters.Count == 0)
+                InstantiateCharacters();
             ContinuePause = false;
         }
 		/// <summary>
@@ -197,7 +198,6 @@ namespace MoreMountains.InfiniteRunnerEngine
 	        GameManager.Instance.SetStatus(GameManager.GameStatus.GameInProgress);
 			GameManager.Instance.AutoIncrementScore(true);
 			MMEventManager.TriggerEvent(new MMGameEvent("GameStart"));
-
         }
 
         /// <summary>
