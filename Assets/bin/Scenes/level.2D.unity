@@ -548,7 +548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409360, guid: 5bd81293059a7fa4393b5ae1d239de5d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409360, guid: 5bd81293059a7fa4393b5ae1d239de5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1181,7 +1181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: TotalLives
@@ -1189,6 +1189,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
       propertyPath: Continues
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402082, guid: b1537507c557d46d3a4963042faeaafe, type: 3}
+      propertyPath: TimeScale
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1724,9 +1728,9 @@ MonoBehaviour:
   DeathBounds:
     m_Center: {x: 8, y: 11, z: 0}
     m_Extent: {x: 12, y: 14, z: 0}
-  InitialSpeed: 5
-  MaximumSpeed: 25
-  SpeedAcceleration: 0.05
+  InitialSpeed: 7.5
+  MaximumSpeed: 15
+  SpeedAcceleration: 0.2
   IntroFadeDuration: 0.5
   OutroFadeDuration: 1
   StartCountdown: 3
@@ -1741,12 +1745,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621938741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 763629478}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &653244058
 GameObject:
@@ -1930,8 +1934,14 @@ Transform:
   - {fileID: 798710342}
   - {fileID: 845055648}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &763629478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 409264, guid: b1537507c557d46d3a4963042faeaafe,
+    type: 3}
+  m_PrefabInstance: {fileID: 424536973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788537742
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,7 +3548,7 @@ PrefabInstance:
     - target: {fileID: 4673043670379121231, guid: 3091ce71295a56b4981813decc980d43,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4673043670379121231, guid: 3091ce71295a56b4981813decc980d43,
         type: 3}
@@ -4953,7 +4963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 433572, guid: 70f25d04382fe47a095b00bae126ce18, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70f25d04382fe47a095b00bae126ce18, type: 3}
@@ -5290,7 +5300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591563075
 GameObject:
@@ -6154,7 +6164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974377411
 GameObject:
@@ -6288,6 +6298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testMode: 0
+  gameId: 
+  myButton: {fileID: 0}
+  levelSelector: {fileID: 0}
   lives: 3
   myPlacementId: rewardedVideo
 --- !u!114 &2066856618
@@ -6740,7 +6753,7 @@ PrefabInstance:
     - target: {fileID: 3364214512192739358, guid: 5e64a7ea1aaabe04791e6d787c928fa8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3364214512192739358, guid: 5e64a7ea1aaabe04791e6d787c928fa8,
         type: 3}

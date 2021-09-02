@@ -24,9 +24,8 @@ namespace DBRObjects
         public static int LoadCurrency()
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(DataPath, FileMode.Open);
             if (!File.Exists(DataPath)) SaveCurrency(0);
-
+            FileStream stream = new FileStream(DataPath, FileMode.Open);
             int Amount = (int)formatter.Deserialize(stream);
             stream.Close();
 

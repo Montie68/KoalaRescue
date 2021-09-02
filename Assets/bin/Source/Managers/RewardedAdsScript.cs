@@ -57,6 +57,9 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
         {
             myButton.interactable = true;
         }
+#if UNITY_WEBGL
+        myButton.interactable = true;
+#endif
     }
 
     public void OnUnityAdsDidFinish( string placementId, ShowResult showResult)
