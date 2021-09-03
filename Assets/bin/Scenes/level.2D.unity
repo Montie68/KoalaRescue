@@ -6297,10 +6297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fbef5fbecc4e7c4e9a28cd98b4f2a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testMode: 0
+  testMode: 1
   gameId: 
-  myButton: {fileID: 0}
-  levelSelector: {fileID: 0}
+  myButton: {fileID: 2066856619}
+  levelSelector: {fileID: 2066856618}
   lives: 3
   myPlacementId: rewardedVideo
 --- !u!114 &2066856618

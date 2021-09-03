@@ -27,13 +27,13 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
 #elif UNITY_ANDROID
             gameId = gameId ?? "3145512";
 #else
-        gameId = "3145512";
+        gameId = gameId ?? "3145512";
 #endif
 
         myButton = myButton ?? GetComponent<Button>();
         levelSelector = levelSelector ?? GetComponent<LevelSelector>();
         // Set interactivity to be dependent on the Placement’s status:
-        myButton.interactable = Advertisement.IsReady(myPlacementId);
+        // myButton.interactable = Advertisement.IsReady(myPlacementId);
 
         // Map the ShowRewardedVideo function to the button’s click listener:
         if (myButton) myButton.onClick.AddListener(ShowRewardedVideo);
@@ -47,6 +47,9 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
     void ShowRewardedVideo()
     {
         Advertisement.Show(myPlacementId);
+#if UNITY_WEBGL
+        levelSelector.Continue(lives);
+#endif
     }
 
     // Implement IUnityAdsListener interface methods:
