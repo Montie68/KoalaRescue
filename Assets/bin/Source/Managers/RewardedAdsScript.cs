@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
 using MoreMountains.InfiniteRunnerEngine;
@@ -23,17 +24,17 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
     {
         // Ads testing script
 #if UNITY_IOS
-            gameId = gameId ?? "3145513";
+            gameId = "3444262";
 #elif UNITY_ANDROID
-            gameId = gameId ?? "3145512";
+        gameId =  "3444263";
 #else
-        gameId = gameId ?? "3145512";
+        gameId =  "3444263";
 #endif
 
         myButton = myButton ?? GetComponent<Button>();
         levelSelector = levelSelector ?? GetComponent<LevelSelector>();
         // Set interactivity to be dependent on the Placement’s status:
-        // myButton.interactable = Advertisement.IsReady(myPlacementId);
+        
 
         // Map the ShowRewardedVideo function to the button’s click listener:
         if (myButton) myButton.onClick.AddListener(ShowRewardedVideo);
@@ -42,8 +43,16 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, testMode);
     }
-
+    private void OnEnable()
+    {
+        StartCoroutine(EnableContinue());
+    }
     // Implement a function for showing a rewarded video ad:
+    private IEnumerator EnableContinue()
+    {
+        yield return new WaitForSeconds(1 / 3);
+        myButton.gameObject.SetActive(Advertisement.IsReady(myPlacementId));
+    }
     void ShowRewardedVideo()
     {
         Advertisement.Show(myPlacementId);
