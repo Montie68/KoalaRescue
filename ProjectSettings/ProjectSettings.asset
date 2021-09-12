@@ -9,7 +9,7 @@ PlayerSettings:
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
   defaultScreenOrientation: 4
-  targetDevice: 0
+  targetDevice: 2
   useOnDemandResources: 1
   accelerometerFrequency: 60
   companyName: Geoff Newman
@@ -168,7 +168,7 @@ PlayerSettings:
     Standalone: au.com.dropbeargames.dropbearrun
     Tizen: com.reuno.infiniterunnerengine
     iOS: au.com.dropbeargames.dropbearrun
-    iPhone: au.com.DropBearGames.KolalaRescue
+    iPhone: info.geoffnewman.koalarescue
     tvOS: au.com.dropbeargames.dropbearrun
   buildNumber:
     iOS: 0
@@ -1000,7 +1000,7 @@ PlayerSettings:
   cloudServicesEnabled:
     Analytics: 0
     Build: 0
-    Collab: 1
+    Collab: 0
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
