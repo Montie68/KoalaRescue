@@ -3715,6 +3715,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884423887}
   m_CullTransparentMesh: 0
+--- !u!1 &934946878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180604, guid: b1537507c557d46d3a4963042faeaafe,
+    type: 3}
+  m_PrefabInstance: {fileID: 424536973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &934946879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934946878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbef5fbecc4e7c4e9a28cd98b4f2a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testMode: 1
+  gameId: 3444263
+  myButton: {fileID: 2066856619}
+  levelSelector: {fileID: 2066856618}
+  lives: 3
+  myPlacementId: Android_Rewarded
 --- !u!1 &964449321
 GameObject:
   m_ObjectHideFlags: 0
@@ -6256,7 +6280,6 @@ GameObject:
   - component: {fileID: 2066856620}
   - component: {fileID: 2066856619}
   - component: {fileID: 2066856618}
-  - component: {fileID: 2066856617}
   m_Layer: 5
   m_Name: ResumeAd
   m_TagString: Untagged
@@ -6285,24 +6308,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000045776367, y: 25.999996}
   m_SizeDelta: {x: 214, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2066856617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066856615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fbef5fbecc4e7c4e9a28cd98b4f2a76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testMode: 1
-  gameId: 3444263
-  myButton: {fileID: 2066856619}
-  levelSelector: {fileID: 2066856618}
-  lives: 3
-  myPlacementId: rewardedVideo
 --- !u!114 &2066856618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,18 +6363,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2066856620}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2066856617}
-        m_MethodName: OnUnityAdsReady
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: rewardedVideo
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2066856620
 MonoBehaviour:
   m_ObjectHideFlags: 0
