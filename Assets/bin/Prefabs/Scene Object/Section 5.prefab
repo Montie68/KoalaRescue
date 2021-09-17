@@ -2322,6 +2322,11 @@ PrefabInstance:
       propertyPath: boxSize.m_Center.y
       value: 7.09
       objectReference: {fileID: 0}
+    - target: {fileID: 8079010830504867224, guid: b30651d213723b846b7621cf2a9d53f7,
+        type: 3}
+      propertyPath: boxSize.m_Extent.z
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30651d213723b846b7621cf2a9d53f7, type: 3}
 --- !u!4 &2949840520708216528 stripped
@@ -2406,6 +2411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: boxSize.m_Center.y
       value: 5.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079010830504867224, guid: b30651d213723b846b7621cf2a9d53f7,
+        type: 3}
+      propertyPath: boxSize.m_Extent.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30651d213723b846b7621cf2a9d53f7, type: 3}
