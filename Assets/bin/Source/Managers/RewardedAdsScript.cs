@@ -14,8 +14,10 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     [SerializeField] string _iOsAdGameId = "3444262";
     string _adUnitId;
     string _gameId;
-    [SerializeField] bool _isTesting;
-
+    [SerializeField] bool _isTesting = true;
+    [SerializeField] bool _enablePerPlacementMode = true;
+    [SerializeField] LevelSelector levelSelector;
+    public int lives = 3;
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
@@ -27,7 +29,11 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             : _androidAdGameId;
         //Disable button until ad is ready to show
         _showAdButton.interactable = false;
-        Advertisement.Initialize(_gameId, _isTesting);
+    }
+
+    void Start()
+    { 
+        Advertisement.Initialize(_gameId, _isTesting, _enablePerPlacementMode, this);
     }
     // Load content to the Ad Unit:
     public void LoadAd()
@@ -43,11 +49,11 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         Debug.Log("Ad Loaded: " + adUnitId);
 
         if (adUnitId.Equals(_adUnitId))
-        {
+        {       
+            _showAdButton.interactable = true;
             // Configure the button to call the ShowAd() method when clicked:
             _showAdButton.onClick.AddListener(ShowAd);
             // Enable the button for users to click:
-            _showAdButton.interactable = true;
         }
     }
 
@@ -61,15 +67,26 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
-    public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
+    public void OnInitializationComplete()
+    {
+        Debug.Log("Unity Ads initialization complete.");
+        LoadAd();
+    }
+
+    public void OnInitializationFailed(UnityAdsInitializationError error, string message)
+    {
+        Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
+    }
+
+public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
-
+            levelSelector.Continue(lives);
             // Load another ad:
-            Advertisement.Load(_adUnitId, this);
+            LoadAd();
         }
     }
 
@@ -78,6 +95,7 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
         // Use the error details to determine whether to try to load another ad.
+
     }
 
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
@@ -93,14 +111,5 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         // Clean up the button listeners:
         _showAdButton.onClick.RemoveAllListeners();
-    }
-
-    public void OnInitializationComplete()
-    {
-    }
-
-    public void OnInitializationFailed(UnityAdsInitializationError error, string message)
-    {
-        Debug.LogErrorFormat("An Error occurred {0}: {1}",  message, error);
     }
 }

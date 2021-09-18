@@ -1997,7 +1997,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 12.4
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
@@ -3837,11 +3837,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showAdButton: {fileID: 2066856619}
-  _androidAdUnitId: Rewarded_Android
-  _iOsAdUnitId: Rewarded_iOS
-  _androidAdGameId: 3444263
-  _iOsAdGameId: 3444262
-  _isTesting: 1
+  _androidAdUnitId: Android_Rewarded
+  _iOsAdUnitId: iOS_Rewarded
+  _androidAdGameId: 3145512
+  _iOsAdGameId: 3145513
+  _isTesting: 0
+  _enablePerPlacementMode: 1
+  levelSelector: {fileID: 2066856618}
+  lives: 3
 --- !u!1 &964449321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,7 +5007,7 @@ MonoBehaviour:
   ZonePressed:
     m_PersistentCalls:
       m_Calls: []
-  MouseMode: 0
+  MouseMode: 1
 --- !u!225 &1391616199
 CanvasGroup:
   m_ObjectHideFlags: 0
