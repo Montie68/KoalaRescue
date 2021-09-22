@@ -168,11 +168,12 @@ PlayerSettings:
     Standalone: au.com.dropbeargames.dropbearrun
     Tizen: com.reuno.infiniterunnerengine
     iOS: au.com.dropbeargames.dropbearrun
-    iPhone: au.com.DropBearGames.KolalaRescue
+    iPhone: info.geoffnewman.koalarescue
     tvOS: au.com.dropbeargames.dropbearrun
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 20210901
+    iPhone: 2
+  AndroidBundleVersionCode: 20210902
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -250,12 +251,12 @@ PlayerSettings:
   metalEditorSupport: 1
   metalAPIValidation: 1
   iOSRenderExtraFrameOnPause: 1
-  appleDeveloperTeamID: 
+  appleDeveloperTeamID: 28DWNJFZ33
   iOSManualSigningProvisioningProfileID: 
   tvOSManualSigningProvisioningProfileID: 
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
-  appleEnableAutomaticSigning: 0
+  appleEnableAutomaticSigning: 1
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
@@ -1000,7 +1001,7 @@ PlayerSettings:
   cloudServicesEnabled:
     Analytics: 0
     Build: 0
-    Collab: 1
+    Collab: 0
     ErrorHub: 0
     Game_Performance: 0
     Hub: 0
