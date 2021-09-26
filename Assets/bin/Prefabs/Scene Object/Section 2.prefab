@@ -165,7 +165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117159818430399551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.73, y: 2.03, z: 0}
+  m_LocalPosition: {x: 10.82, y: 2.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490731257795672916}
@@ -188,6 +188,9 @@ MonoBehaviour:
   SpawObject:
   - {fileID: 2231224777169674325, guid: 75fdf2c6f38837541ae403e64e0bb7c3, type: 3}
   - {fileID: 2231224777169674325, guid: 699f3ca4ec76c164da9b4479254c0f9a, type: 3}
+  - {fileID: 2231224777169674325, guid: 35a9d87378356374586f900983ba6118, type: 3}
+  - {fileID: 2231224777169674325, guid: 9e22ed09756d9c5479766a4388a1e633, type: 3}
+  - {fileID: 2231224777169674325, guid: 58e720c2ab0449b45ac6be60f59a7ec9, type: 3}
 --- !u!1 &5956055434878691928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,7 +1785,7 @@ PrefabInstance:
     - target: {fileID: 8079010830504867224, guid: b30651d213723b846b7621cf2a9d53f7,
         type: 3}
       propertyPath: boxSize.m_Center.x
-      value: 9.73
+      value: 10.82
       objectReference: {fileID: 0}
     - target: {fileID: 8079010830504867224, guid: b30651d213723b846b7621cf2a9d53f7,
         type: 3}
