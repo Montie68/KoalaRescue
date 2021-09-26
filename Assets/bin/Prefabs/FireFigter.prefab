@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 475792}
   - component: {fileID: 6115880}
   - component: {fileID: 5078590}
-  - component: {fileID: 11483956}
   - component: {fileID: 114449341148040972}
   - component: {fileID: 8649277657127653887}
+  - component: {fileID: 4183855854167406511}
   m_Layer: 5
   m_Name: FireFigter
   m_TagString: Player
@@ -83,30 +83,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &11483956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4093d2646d6714512a172172b1279fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseDefaultMecanim: 1
-  ShouldResetPosition: 1
-  ResetPositionSpeed: 0.5
-  GroundDistanceTolerance: 0.05
-  JumpForce: 20
-  NumberOfJumpsAllowed: 1
-  CooldownBetweenJumps: 0
-  JumpsAllowedWhenGroundedOnly: 0
-  JumpReleaseSpeed: 50
-  JumpProportionalToPress: 1
-  MinimalDelayBetweenJumps: 0.3
-  _numberOfJumpsLeft: 0
 --- !u!114 &114449341148040972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +114,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4183855854167406511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034ec8e4e454ee94dac6c047c6092876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDefaultMecanim: 1
+  ShouldResetPosition: 1
+  ResetPositionSpeed: 0.5
+  GroundDistanceTolerance: 0.05
+  JumpForce: 20
+  NumberOfJumpsAllowed: 1
+  CooldownBetweenJumps: 0
+  JumpsAllowedWhenGroundedOnly: 0
+  JumpReleaseSpeed: 50
+  JumpProportionalToPress: 1
+  MinimalDelayBetweenJumps: 0.3
+  _numberOfJumpsLeft: 0
 --- !u!1 &3542478701523049321
 GameObject:
   m_ObjectHideFlags: 0
