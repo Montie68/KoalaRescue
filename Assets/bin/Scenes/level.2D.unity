@@ -1900,7 +1900,7 @@ MonoBehaviour:
   DeathBounds:
     m_Center: {x: 8, y: 11, z: 0}
     m_Extent: {x: 12, y: 14, z: 0}
-  InitialSpeed: 15
+  InitialSpeed: 7.5
   MaximumSpeed: 15
   SpeedAcceleration: 0.2
   IntroFadeDuration: 0.5
@@ -2015,7 +2015,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667967948}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 6.6401134, y: 6, z: 0.20000002}
@@ -4613,8 +4613,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146861653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.76, y: 0.09, z: 11.15}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalPosition: {x: -8.76, y: -0.235, z: 11.15}
+  m_LocalScale: {x: 2.5, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 450676589}
   m_RootOrder: 7
@@ -5347,7 +5347,7 @@ PrefabInstance:
     - target: {fileID: 5903908410484567560, guid: 4317c86412858bc4b9da8a08dc1a3e7d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8
+      value: -2.64
       objectReference: {fileID: 0}
     - target: {fileID: 5903908410484567560, guid: 4317c86412858bc4b9da8a08dc1a3e7d,
         type: 3}
