@@ -2242,9 +2242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac325a24f3893d47929b1db8ef0feb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChanceOfSpawn: 1
+  ChanceOfSpawn: 0.8
   SpawObject:
   - {fileID: 2231224777169674325, guid: bf0d6b6c94d7c55419d85e7c06c3a364, type: 3}
+  - {fileID: 2231224777169674325, guid: ba4d1067820c7c1499b8b18835278b89, type: 3}
+  - {fileID: 2231224777169674325, guid: cb1da5f34afcad04fa5e9e87d94d8bad, type: 3}
 --- !u!1001 &8898421447849639822
 PrefabInstance:
   m_ObjectHideFlags: 0

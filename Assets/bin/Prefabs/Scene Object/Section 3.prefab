@@ -984,6 +984,8 @@ MonoBehaviour:
   ChanceOfSpawn: 0.6
   SpawObject:
   - {fileID: 2231224777169674325, guid: bf0d6b6c94d7c55419d85e7c06c3a364, type: 3}
+  - {fileID: 2231224777169674325, guid: cb1da5f34afcad04fa5e9e87d94d8bad, type: 3}
+  - {fileID: 2231224777169674325, guid: ba4d1067820c7c1499b8b18835278b89, type: 3}
 --- !u!1 &5809710742359161142
 GameObject:
   m_ObjectHideFlags: 0
