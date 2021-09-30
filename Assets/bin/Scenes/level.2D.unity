@@ -5661,7 +5661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c3369c675a677747bde4a857aee7f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Main Menu
+  LevelName: Leaderboard_main
 --- !u!114 &1530144235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6671,7 +6671,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1930756645}
-        m_MethodName: RestartLevel
+        m_MethodName: RestartLevelCheckScores
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7401,6 +7401,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3364214512192739344, guid: 5e64a7ea1aaabe04791e6d787c928fa8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3364214512192739358, guid: 5e64a7ea1aaabe04791e6d787c928fa8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7458,6 +7463,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e64a7ea1aaabe04791e6d787c928fa8, type: 3}
+--- !u!1 &3364214513125357208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3364214512192739344, guid: 5e64a7ea1aaabe04791e6d787c928fa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3364214513125357207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3364214513125357209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3364214513125357208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46fe1f55671cef4eab3ee3fbbbda357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Row: {fileID: 0}
+  _scoreInput: {fileID: 0}
 --- !u!1001 &5903908410217477347
 PrefabInstance:
   m_ObjectHideFlags: 0

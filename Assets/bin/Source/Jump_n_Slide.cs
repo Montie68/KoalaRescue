@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿// By Geoff Newman
+using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 
 namespace MoreMountains.InfiniteRunnerEngine
 {	
+	/// <summary>
+	///  Inherit From the Jumper class and add action down override from PlayableCharacter Parent class
+	/// </summary>
 	public class Jump_n_Slide : Jumper 
 	{
 
@@ -32,7 +36,7 @@ namespace MoreMountains.InfiniteRunnerEngine
 			// TODO place Mecanim updates for ground slide here
 		}
 
-		// TODO get suitablie sliding animantion for characters place code here 
+		// TODO get suitable sliding animantion for characters place code here 
 		public override void DownStart() {
 			Debug.Log("going downnnn!");
 		}
