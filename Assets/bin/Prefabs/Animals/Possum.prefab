@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PickEffect: {fileID: 0}
   PickSoundFx: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
-  PointsToAdd: 2
+  PointsToAdd: 1
 --- !u!95 &5466334173808711010
 Animator:
   serializedVersion: 3
