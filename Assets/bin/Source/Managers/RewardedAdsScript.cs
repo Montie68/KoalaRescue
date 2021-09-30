@@ -16,7 +16,7 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     string _gameId;
     [SerializeField] bool _isTesting = true;
     [SerializeField] bool _enablePerPlacementMode = true;
-    [SerializeField] LevelSelector levelSelector;
+    [SerializeField] LevelSelector levelSelector = null;
     public int lives = 3;
     void Awake()
     {
