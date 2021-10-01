@@ -172,7 +172,7 @@ PlayerSettings:
     tvOS: au.com.dropbeargames.dropbearrun
   buildNumber:
     iOS: 0
-    iPhone: 2
+    iPhone: 5
   AndroidBundleVersionCode: 20210902
   AndroidMinSdkVersion: 24
   AndroidTargetSdkVersion: 0
