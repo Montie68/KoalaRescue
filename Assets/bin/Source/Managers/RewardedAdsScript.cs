@@ -27,8 +27,12 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         _gameId = (Application.platform == RuntimePlatform.IPhonePlayer)
             ? _iOsAdGameId
             : _androidAdGameId;
-        //Disable button until ad is ready to show
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
+        _showAdButton.interactable = true;
+#elif UNITY_IOS || UNITY_ANDROID
+         //Disable button until ad is ready to show
         _showAdButton.interactable = false;
+#endif
     }
 
     void Start()
@@ -60,10 +64,17 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     // Implement a method to execute when the user clicks the button.
     public void ShowAd()
     {
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
+        _showAdButton.interactable = true;
+        levelSelector.Continue(lives);
+        return;
+#elif UNITY_IOS || UNITY_ANDROID
+
         // Disable the button: 
         _showAdButton.interactable = false;
         // Then show the ad:
         Advertisement.Show(_adUnitId, this);
+#endif
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
