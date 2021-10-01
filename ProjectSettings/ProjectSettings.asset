@@ -173,7 +173,7 @@ PlayerSettings:
   buildNumber:
     iOS: 0
     iPhone: 2
-  AndroidBundleVersionCode: 20210904
+  AndroidBundleVersionCode: 20210905
   AndroidMinSdkVersion: 26
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
