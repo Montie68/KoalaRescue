@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickEffect: {fileID: 0}
-  PickSoundFx: {fileID: 8300000, guid: 53d7a3adf877b4b72b7ec879fd0c0c75, type: 3}
+  PickSoundFx: {fileID: 8300000, guid: fe84933f992b9f44381269ba3b35e727, type: 3}
   PointsToAdd: 2
 --- !u!1001 &5965574023051080941
 PrefabInstance:
